@@ -104,7 +104,7 @@ export const DrawCrossWord = (data, dispans=true, onsolved=() => alert("solved")
     });
     $resetButton.appendTo($puzzleButtons);
     
-    if(dispans === true){
+    if(dispans == true){
         var $solveButton = $('<button class="show-answers btn btn-default">Show Answers</button>');
         $solveButton.on('click', function (e) {
             e.preventDefault();

@@ -1,22 +1,21 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Header from "./components/Navigation/Header";
-import Footer from "./components/Navigation/Footer";
-import Landing from "./components/Public/Landing";
-import Contact from "./components/Public/Contact";
-import SignIn from "./components/Auth/SignIn";
-import SignUp from "./components/Auth/SignUp";
-import Dashboard from "./components/UserPages/Dashboard";
-import ProtectedRoute from "./components/Auth/ProtectedRoute";
-import Account from "./components/UserPages/Account";
-import Crossword from "./components/Crossword/Crossword";
-import Create from "./components/Crossword/Create";
-import Random from "./components/Crossword/Random";
-import Challenge from "./components/Crossword/Challenge";
-import View from "./components/Helper/View";
-import UserCrosswordView from "./components/Helper/UserCrosswordView";
-import Error from "./components/Helper/Error";
-import ChallengeView from "./components/Helper/ChallengeView";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Landing from "./components/Landing";
+import Contact from "./components/Contact";
+import SignIn from "./components/SignIn";
+import SignUp from "./components/SignUp";
+import Dashboard from "./components/Dashboard";
+import ProtectedRoute from "./components/ProtectedRoute";
+import Account from "./components/Account";
+import Crossword from "./components/Crossword";
+import Create from "./components/Create";
+import Random from "./components/Random";
+import Challenge from "./components/Challenge";
+import View from "./components/View";
+import UserCrosswordView from "./components/UserCrosswordView";
+import ChallengeView from "./components/challengeview";
 
 function App() {
 
@@ -34,8 +33,11 @@ function App() {
           <Route exact path="/crossword/create" component={Create} />
           <Route exact path="/crossword/random" component={Random} />
           <Route exact path="/crossword/challenge" component={Challenge} />
-          <Route exact path="/crossword/:id" component={View} />
+          <Route path="/crossword/:id" component={View} />
+
           <Route path="/crosswordchg/:id" component={ChallengeView} />
+
+          <Route path="/:user/:id" component={UserCrosswordView} />
           <ProtectedRoute exact path="/dashboard" component={Dashboard} />
           <ProtectedRoute exact path="/account" component={Account} />
           <Route exact path="/:user/:id" component={UserCrosswordView} />
