@@ -26,9 +26,9 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={Landing} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/signin" component={SignIn} />
-          <Route path="/signup" component={SignUp} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/signin" component={SignIn} />
+          <Route exact path="/signup" component={SignUp} />
           <Route exact path="/crossword" component={Crossword} />
           <Route exact path="/crossword/create" component={Create} />
           <Route exact path="/crossword/random" component={Random} />
@@ -40,6 +40,8 @@ function App() {
           <Route path="/:user/:id" component={UserCrosswordView} />
           <ProtectedRoute exact path="/dashboard" component={Dashboard} />
           <ProtectedRoute exact path="/account" component={Account} />
+          <Route exact path="/:user/:id" component={UserCrosswordView} />
+          <Route component={Error} />
         </Switch>
         <Footer />
       </div>

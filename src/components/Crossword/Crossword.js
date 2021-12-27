@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import createimg from '../img/create.jpg';
-import challengeimg from '../img/challenge.png';
-import generateimg from '../img/generate.png';
+import createimg from '../../img/create.jpg';
+import challengeimg from '../../img/challenge.png';
+import generateimg from '../../img/generate.png';
 
 export default function Generate() {
     return (
