@@ -15,8 +15,6 @@ import Random from "./components/Crossword/Random";
 import Challenge from "./components/Crossword/Challenge";
 import View from "./components/Helper/View";
 import UserCrosswordView from "./components/Helper/UserCrosswordView";
-import Contest from "./components/Contest/ContestLanding";
-import CreateContest from "./components/Contest/CreateContest";
 import Error from "./components/Helper/Error";
 import ChallengeView from "./components/Helper/ChallengeView";
 
@@ -38,8 +36,6 @@ function App() {
           <Route exact path="/crossword/challenge" component={Challenge} />
           <Route exact path="/crossword/:id" component={View} />
           <Route path="/crosswordchg/:id" component={ChallengeView} />
-          <Route exact path="/contest" component={Contest} />
-          <ProtectedRoute exact path="/contest/create" component={CreateContest} />
           <ProtectedRoute exact path="/dashboard" component={Dashboard} />
           <ProtectedRoute exact path="/account" component={Account} />
           <Route exact path="/:user/:id" component={UserCrosswordView} />

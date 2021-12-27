@@ -37,7 +37,6 @@ export default function Header(props) {
                             <li><NavLink className="nav-link px-2 link-dark navbar-brand" to="/">CrossWord</NavLink></li>
                             <li><NavLink className="nav-link px-2 link-dark active" to="/">Home</NavLink></li>
                             <li><NavLink className="nav-link px-2 link-dark" to="/crossword">Generate</NavLink></li>
-                            <li><NavLink className="nav-link px-2 link-dark" to="/contest">Contest</NavLink></li>
                             <li><NavLink className="nav-link px-2 link-dark" to="/about">About Us</NavLink></li>
                             <li><NavLink className="nav-link px-2 link-dark" to="/contact">Contact Us</NavLink></li>
                         </ul>
