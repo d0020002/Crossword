@@ -21,31 +21,32 @@ function App() {
 
 
   return (
-    <>
-      <div>
-        <Header />
-        <Switch>
-          <Route exact path="/" component={Landing} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/signin" component={SignIn} />
-          <Route exact path="/signup" component={SignUp} />
-          <Route exact path="/crossword" component={Crossword} />
-          <Route exact path="/crossword/create" component={Create} />
-          <Route exact path="/crossword/random" component={Random} />
-          <Route exact path="/crossword/challenge" component={Challenge} />
-          <Route path="/crossword/:id" component={View} />
+    <h1> Update coming soon. Hurray !!! </h1>
+//     <>
+//       <div>
+//         <Header />
+//         <Switch>
+//           <Route exact path="/" component={Landing} />
+//           <Route exact path="/contact" component={Contact} />
+//           <Route exact path="/signin" component={SignIn} />
+//           <Route exact path="/signup" component={SignUp} />
+//           <Route exact path="/crossword" component={Crossword} />
+//           <Route exact path="/crossword/create" component={Create} />
+//           <Route exact path="/crossword/random" component={Random} />
+//           <Route exact path="/crossword/challenge" component={Challenge} />
+//           <Route path="/crossword/:id" component={View} />
 
-          <Route path="/crosswordchg/:id" component={ChallengeView} />
+//           <Route path="/crosswordchg/:id" component={ChallengeView} />
 
-          <Route path="/:user/:id" component={UserCrosswordView} />
-          <ProtectedRoute exact path="/dashboard" component={Dashboard} />
-          <ProtectedRoute exact path="/account" component={Account} />
-          <Route exact path="/:user/:id" component={UserCrosswordView} />
-          <Route component={Error} />
-        </Switch>
-        <Footer />
-      </div>
-    </>
+//           <Route path="/:user/:id" component={UserCrosswordView} />
+//           <ProtectedRoute exact path="/dashboard" component={Dashboard} />
+//           <ProtectedRoute exact path="/account" component={Account} />
+//           <Route exact path="/:user/:id" component={UserCrosswordView} />
+//           <Route component={Error} />
+//         </Switch>
+//         <Footer />
+//       </div>
+//     </>
   );
 }
 
